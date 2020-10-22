@@ -49,7 +49,8 @@ app.get("/weather",(req,res) => {
                 res.send({
                     location,
                     Tampruter,
-                    FellLike
+                    FellLike,
+                    
                 })
                
               })

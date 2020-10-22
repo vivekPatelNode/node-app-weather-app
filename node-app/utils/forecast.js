@@ -10,7 +10,8 @@ const forecast = (longitude,latitude,callback) => {
             callback(undefined,{
                 Location:body.location.region,
                 Tampruter:body.current.temperature,
-                FellLike:body.current.feelslike
+                FellLike:body.current.feelslike,
+                
             })
         }
     })
