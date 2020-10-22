@@ -1,5 +1,5 @@
 
-console.log("Hi I am vivek kumar verma")
+console.log("Hi I am vivek kumar")
 const formSelect = document.querySelector("form")
 const serchText = document.querySelector("input")
 const messageOne = document.querySelector("#message-1")
@@ -15,7 +15,7 @@ formSelect.addEventListener("submit",(e) =>{
     messageOne.textContent = "Lodaing.."
     messageTwo.textContent = ""
     
-     fetch(`http://localhost:3000/weather?address=${location}`).then((response) =>{
+     fetch(`/weather?address=${location}`).then((response) =>{
     response.json().then((data) => {
         if(data.error) {
             messageOne.textContent = data.error
